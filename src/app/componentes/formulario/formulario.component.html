@@ -1,0 +1,46 @@
+<form [formGroup]="form" (ngSubmit)="showData()">
+    <div class="card">
+        <div class="card-header">Formulario</div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Ingresa un nombre"
+                    formControlName="nombre"
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Correo </label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id=""
+                    aria-describedby="helpId"
+                    placeholder="Ingresa tu correo "
+                    formControlName="correo"
+                />
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Mensaje</label>
+                <textarea 
+                class="form-control" name="" id="" rows="3"
+                placeholder="Ingresa tu mensaje"
+                formControlName="mensaje"
+                >
+
+                </textarea>
+            </div>
+            
+            <button class="btn  btn-primary" type="submit"
+            [disabled]="!form.valid">Enviar</button>
+            
+        </div>
+    </div>
+    
+</form>

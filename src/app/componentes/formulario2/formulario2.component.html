@@ -1,0 +1,66 @@
+<form [formGroup]="fGroup" (ngSubmit)="showData()">
+    <div class="card">
+        <div class="card-header">Formulario 2</div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="" class="form-label">Nombre</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id=""
+                    aria-describedby="helpId"
+                    placeholder="Escribe tu nombre"
+                    formControlName="nombre"
+                />
+
+                <div class="alert alert-danger" [hidden]="showErrorM('nombre')">
+                    Debes ingresar un nombre
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="" class="form-label">Email</label>
+                <input
+                    type="email"
+                    class="form-control"
+                    name=""
+                    id=""
+                    aria-describedby="helpId"
+                    placeholder="Escribe tu Correo"
+                    formControlName="correo"
+
+                />
+
+                <div class="alert alert-danger" [hidden]="showErrorM('correo')">
+                    Debes ingresar un correo
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <textarea class="form-control" name="" id="" rows="3"
+                placeholder="Escribe tu mensaje"
+                formControlName="mensaje"
+                ></textarea>
+
+                <div class="alert alert-danger" [hidden]="showErrorM('mensaje')">
+                    Debes ingresar un mensaje
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary"
+            [disabled]="!fGroup.valid">Enviar</button>
+
+
+            
+            
+            
+            
+           
+        </div>
+    </div>
+    
+</form>
