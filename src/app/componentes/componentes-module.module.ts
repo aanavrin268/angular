@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ComponentesModuleRoutingModule } from './componentes-module-routing.module';
-import { AddTodoComponent } from './add-todo/add-todo.component';
-import { EditTodoComponent } from './edit-todo/edit-todo.component';
+import { SegundoComponent } from './segundo/segundo.component';
+import { TerceroComponent } from './tercero/tercero.component';
+import { PipesComponent } from './pipes/pipes.component';
+
 
 
 @NgModule({
   declarations: [
-  
   ],
   imports: [
     CommonModule,

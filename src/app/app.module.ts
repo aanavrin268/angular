@@ -12,6 +12,9 @@ import { ListaComponent } from './componentes/lista/lista.component';
 import { ListaServicioComponent } from './componentes/lista-servicio/lista-servicio.component';
 import { AddTodoComponent } from './componentes/add-todo/add-todo.component';
 import { EditTodoComponent } from './componentes/edit-todo/edit-todo.component';
+import { EnrutamientoComponent } from './componentes/enrutamiento/enrutamiento.component';
+import { ToUpperCasePipe } from './pipes/to-upper-case.pipe';
+import { PipesComponent } from './componentes/pipes/pipes.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { EditTodoComponent } from './componentes/edit-todo/edit-todo.component';
     ListaComponent,
     ListaServicioComponent,
     AddTodoComponent,
-    EditTodoComponent
+    EditTodoComponent,
+    EnrutamientoComponent,
+    ToUpperCasePipe,
+    PipesComponent
     
   ],
   imports: [

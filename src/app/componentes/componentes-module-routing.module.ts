@@ -8,6 +8,11 @@ import { Formulario2Component } from './formulario2/formulario2.component';
 import { ListaServicioComponent } from './lista-servicio/lista-servicio.component';
 import { AddTodoComponent } from './add-todo/add-todo.component';
 import { EditTodoComponent } from './edit-todo/edit-todo.component';
+import { EnrutamientoComponent } from './enrutamiento/enrutamiento.component';
+import { PrimeroComponent } from './primero/primero.component';
+import { SegundoComponent } from './segundo/segundo.component';
+import { TerceroComponent } from './tercero/tercero.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 
 const routes: Routes = [
@@ -42,6 +47,28 @@ const routes: Routes = [
   {
     path:'lista2/editar/:id',
     component:EditTodoComponent
+  },
+  {
+    path: 'rutas',
+    component:EnrutamientoComponent,
+    children: [
+      {
+        path:'primero',
+        component: PrimeroComponent
+      },
+      {
+        path:'segundo',
+        component:SegundoComponent
+      },
+      {
+        path:'tercero',
+        component:TerceroComponent
+      }
+    ]
+  },
+  {
+    path:'pipe',
+    component:PipesComponent
   }
   
 ];
