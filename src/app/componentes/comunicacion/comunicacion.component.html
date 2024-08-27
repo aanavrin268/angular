@@ -1,0 +1,44 @@
+
+<div>
+    <div class="card">
+        <div class="card-header">Comunicacion entre Componentes</div>
+        <div class="card-body">
+            <div>
+                <h1>Componente Padre:</h1>
+
+                <div>
+                    <form [formGroup]="fGroup" (ngSubmit)="sendData()">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Mensaje</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder="Ingresa un mensaje a pasar"
+                                formControlName="mensaje"
+                            />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" [disabled]="!fGroup.valid">Enviar</button>
+                    </form>
+
+                    <p>hijo dice: </p>
+                    <p>{{recibedMsg}}</p>
+
+                </div>
+            </div>
+
+            <div>
+                <h1>Componente Hijo:</h1>
+                <app-hijo
+                (msgSended)="recivedData($event)"
+                ></app-hijo>
+
+            </div>
+        </div>
+    </div>
+    
+</div>
+

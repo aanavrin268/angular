@@ -5,11 +5,15 @@ import { ComponentesModuleRoutingModule } from './componentes-module-routing.mod
 import { SegundoComponent } from './segundo/segundo.component';
 import { TerceroComponent } from './tercero/tercero.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ComunicacionComponent } from './comunicacion/comunicacion.component';
+import { HijoComponent } from './comunicacion/hijo/hijo.component';
 
 
 
 @NgModule({
   declarations: [
+  
+  
   ],
   imports: [
     CommonModule,

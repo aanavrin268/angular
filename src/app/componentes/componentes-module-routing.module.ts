@@ -13,6 +13,8 @@ import { PrimeroComponent } from './primero/primero.component';
 import { SegundoComponent } from './segundo/segundo.component';
 import { TerceroComponent } from './tercero/tercero.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ComunicacionComponent } from './comunicacion/comunicacion.component';
+import { HijoComponent } from './comunicacion/hijo/hijo.component';
 
 
 const routes: Routes = [
@@ -69,6 +71,16 @@ const routes: Routes = [
   {
     path:'pipe',
     component:PipesComponent
+  },
+  {
+    path:'comunicacion',
+    component:ComunicacionComponent,
+    children: [
+      {
+        path: 'hijo',
+        component:HijoComponent
+      }
+    ]
   }
   
 ];

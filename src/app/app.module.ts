@@ -15,6 +15,8 @@ import { EditTodoComponent } from './componentes/edit-todo/edit-todo.component';
 import { EnrutamientoComponent } from './componentes/enrutamiento/enrutamiento.component';
 import { ToUpperCasePipe } from './pipes/to-upper-case.pipe';
 import { PipesComponent } from './componentes/pipes/pipes.component';
+import { ComunicacionComponent } from './componentes/comunicacion/comunicacion.component';
+import { HijoComponent } from './componentes/comunicacion/hijo/hijo.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { PipesComponent } from './componentes/pipes/pipes.component';
     EditTodoComponent,
     EnrutamientoComponent,
     ToUpperCasePipe,
-    PipesComponent
+    PipesComponent,
+    ComunicacionComponent,
+    HijoComponent
     
   ],
   imports: [
